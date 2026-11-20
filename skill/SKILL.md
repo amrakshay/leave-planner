@@ -72,7 +72,9 @@ Fetch only what changed. Record fingerprints in `data/sync-state.json`.
    - Worked-on-a-holiday swaps go in `swaps` as `{worked, off, note}`.
 4. **Holidays** (`holidays.json`). Read events from `config.calendars.holidays.id` for the year.
    If the calendar's `updated` time equals the stored `updated`, skip. Keep all-day events whose
-   title starts with `company_prefix` (kind `company`) or `optional_prefix` (kind `optional`).
+   title starts with one of `company_prefixes` (kind `company`) or `optional_prefixes` (kind
+   `optional`). Match loosely: ignore case and leading spaces, and expect typos such as
+   "Holliday". Ask the user about any other all-day event. Ignore timed events (meetings).
    If the calendar has nothing, fall back to the holiday-list PDF from
    `config.gmail.holiday_list_query`. Also check `<year+1>` once HR publishes it (December).
 5. **Festivals** (`festivals.json`). Once per year only. Major festivals for

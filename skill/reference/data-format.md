@@ -18,7 +18,7 @@ data/
 | `optional_per_year` | Optional holidays allowed per year |
 | `cl_lapses_at_year_end` | Show the "CL may lapse" warning |
 | `cl_rule_verified` | `false` adds "rule unverified" to the warning |
-| `pl_carry_forward_max` | Not used by the build yet; for your reference |
+| `pl_carry_forward_max` | PL above this at year end shows in the lapse warning (`null` to skip) |
 | `no_type_means` | Leave type assumed when an email names none (`PL`) |
 
 ## sync-state.json

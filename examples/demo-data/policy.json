@@ -3,6 +3,6 @@
   "optional_per_year": 2,
   "cl_lapses_at_year_end": true,
   "cl_rule_verified": false,
-  "pl_carry_forward_max": null,
+  "pl_carry_forward_max": 11,
   "no_type_means": "PL"
 }

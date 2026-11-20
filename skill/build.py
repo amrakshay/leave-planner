@@ -318,6 +318,7 @@ class Model:
                           "text": f"Team calendar shows you off {ranges_text(ks)}, {what}",
                           "button": "Copy sync command" if st != "pending" else None,
                           "cmd": "/leave-dashboard sync-calendar"})
+        stale, oldest = [], 0
         for r in self.requests:
             if r["status"] != "pending":
                 continue
@@ -326,8 +327,11 @@ class Model:
                 continue
             age = (self.today - d(last[:10])).days
             if age >= PENDING_NUDGE_DAYS:
-                items.append({"icon": "ti-clock", "tone": "accent",
-                              "text": f"No reply from {mgr} on {ranges_text(r['dates'])} for {age} days"})
+                stale += r["dates"]
+                oldest = max(oldest, age)
+        if stale:
+            items.append({"icon": "ti-clock", "tone": "accent",
+                          "text": f"No reply from {mgr} on {ranges_text(stale)} for {oldest} days"})
         not_in = [k for k in approved if k not in self.in_sheet]
         if self.sheet_as_on is not None:
             late = [k for k in not_in if d(k) <= self.sheet_as_on]
@@ -365,7 +369,8 @@ def page_data(m, cfg, policy, synced_at):
     b = m.balances()
     lapse = None
     if policy.get("cl_lapses_at_year_end", True):
-        lapse = {"date": f"{m.year}-12-31", "verified": bool(policy.get("cl_rule_verified"))}
+        lapse = {"date": f"{m.year}-12-31", "verified": bool(policy.get("cl_rule_verified")),
+                 "pl_max": policy.get("pl_carry_forward_max")}
     nxt = m.next_off()
     return {
         "year": m.year,

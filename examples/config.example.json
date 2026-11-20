@@ -38,8 +38,8 @@
     },
     "holidays": {
       "id": "",
-      "company_prefix": "Holiday",
-      "optional_prefix": "Optional Holiday"
+      "company_prefixes": ["Holiday", "Compensatory Off"],
+      "optional_prefixes": ["Optional Holiday"]
     }
   },
 
