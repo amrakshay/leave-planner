@@ -1,0 +1,9 @@
+{
+  "_note": "Names only. Sample data; dates not checked against a panchang.",
+  "verified": false,
+  "festivals": [
+    {"date": "2026-11-08", "name": "Lakshmi Pujan"},
+    {"date": "2026-11-20", "name": "Kartiki Ekadashi"},
+    {"date": "2026-12-24", "name": "Datta Jayanti"}
+  ]
+}

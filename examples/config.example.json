@@ -1,0 +1,47 @@
+{
+  "_comment": "Copy to config.json at the repo root (git-ignored) and fill in your own values. Nothing in this file is committed once copied.",
+  "name": "Your Full Name",
+  "short_name": "Your N",
+  "email": "you@example.com",
+  "employee_code": "000",
+  "dashboard_title": "Leave planner",
+  "timezone": "Asia/Kolkata",
+
+  "manager": {
+    "name": "Manager",
+    "emails": ["manager@example.com"],
+    "_note": "Only a reply from one of these addresses counts as approval."
+  },
+  "cc": [],
+
+  "hr_sheet": {
+    "search": "Team Leave Record",
+    "_note": "One Google Sheet / xlsx per year. The skill finds it by this title search and stores the id below.",
+    "by_year": {
+      "2026": { "drive_id": "", "title": "" }
+    },
+    "row_match": { "employee_code": "000", "name_contains": "Your Full Name" }
+  },
+
+  "gmail": {
+    "leave_query": "to:(manager@example.com) (leave OR PL OR CL OR \"optional holiday\") newer_than:400d",
+    "holiday_list_query": "subject:(\"Holiday List\") has:attachment",
+    "policy_thread_id": ""
+  },
+
+  "calendars": {
+    "team": {
+      "id": "",
+      "event_title": "Your N On Leave",
+      "creator": "you@example.com",
+      "_note": "Shared team calendar. The skill only edits events whose creator is you, and only after you approve."
+    },
+    "holidays": {
+      "id": "",
+      "company_prefix": "Holiday",
+      "optional_prefix": "Optional Holiday"
+    }
+  },
+
+  "festivals": { "region": "Maharashtra", "style": "Kalnirnay" }
+}

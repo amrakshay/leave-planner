@@ -1,0 +1,10 @@
+# Personal data — never commit. The repo is public.
+/config.json
+/data/
+/leave-dashboard.html
+
+# Local tooling
+/.claude/
+.DS_Store
+__pycache__/
+*.pyc

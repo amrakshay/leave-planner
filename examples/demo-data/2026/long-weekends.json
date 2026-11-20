@@ -1,0 +1,128 @@
+{
+  "_note": "Entries with source 'auto' are recalculated on every build; entries with source 'you' are never touched.",
+  "entries": [
+    {
+      "from": "2026-01-24",
+      "to": "2026-01-26",
+      "days": 3,
+      "leaves_needed": [],
+      "source": "auto",
+      "note": "Republic Day on Monday",
+      "kind": "free"
+    },
+    {
+      "from": "2026-02-20",
+      "to": "2026-02-22",
+      "days": 3,
+      "leaves_needed": [],
+      "source": "auto",
+      "note": "Your leave on Fri 20 Feb",
+      "kind": "plan"
+    },
+    {
+      "from": "2026-02-27",
+      "to": "2026-03-01",
+      "days": 3,
+      "leaves_needed": [],
+      "source": "auto",
+      "note": "Your leave on Fri 27 Feb",
+      "kind": "plan"
+    },
+    {
+      "from": "2026-04-03",
+      "to": "2026-04-05",
+      "days": 3,
+      "leaves_needed": [],
+      "source": "auto",
+      "note": "Your leave on Fri 3 Apr",
+      "kind": "plan"
+    },
+    {
+      "from": "2026-05-01",
+      "to": "2026-05-03",
+      "days": 3,
+      "leaves_needed": [],
+      "source": "auto",
+      "note": "Maharashtra Day on Friday",
+      "kind": "free"
+    },
+    {
+      "from": "2026-05-12",
+      "to": "2026-05-17",
+      "days": 6,
+      "leaves_needed": [],
+      "source": "auto",
+      "note": "Your leave 12–15 May",
+      "kind": "plan"
+    },
+    {
+      "from": "2026-09-25",
+      "to": "2026-09-27",
+      "days": 3,
+      "leaves_needed": [],
+      "source": "auto",
+      "note": "Anant Chaturdashi on Friday",
+      "kind": "free"
+    },
+    {
+      "from": "2026-10-02",
+      "to": "2026-10-04",
+      "days": 3,
+      "leaves_needed": [],
+      "source": "auto",
+      "note": "Gandhi Jayanti on Friday",
+      "kind": "free"
+    },
+    {
+      "from": "2026-11-06",
+      "to": "2026-11-11",
+      "days": 6,
+      "leaves_needed": [],
+      "source": "auto",
+      "note": "Dhanteras + Diwali + your leave 10–11 Nov",
+      "kind": "plan"
+    },
+    {
+      "from": "2026-11-26",
+      "to": "2026-11-29",
+      "days": 4,
+      "leaves_needed": [
+        "2026-11-27"
+      ],
+      "source": "auto",
+      "note": "Take Fri 27 Nov to join your leave on 26 Nov",
+      "kind": "sug"
+    },
+    {
+      "from": "2026-12-04",
+      "to": "2026-12-06",
+      "days": 3,
+      "leaves_needed": [],
+      "source": "auto",
+      "note": "Your leave on Fri 4 Dec",
+      "kind": "plan"
+    },
+    {
+      "from": "2026-12-25",
+      "to": "2026-12-27",
+      "days": 3,
+      "leaves_needed": [],
+      "source": "auto",
+      "note": "Christmas on Friday",
+      "kind": "free"
+    },
+    {
+      "from": "2026-12-25",
+      "to": "2027-01-03",
+      "leaves_needed": [
+        "2026-12-28",
+        "2026-12-29",
+        "2026-12-30",
+        "2026-12-31"
+      ],
+      "source": "you",
+      "note": "Year-end break, if 1 Jan is a holiday",
+      "days": 10
+    }
+  ]
+}

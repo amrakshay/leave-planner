@@ -1,0 +1,14 @@
+{
+  "_note": "Your own row of the HR leave sheet only.",
+  "drive_id": "demo",
+  "modifiedTime": "2026-11-04T10:00:00Z",
+  "as_on": "2026-11-04",
+  "opening": {"PL": 2.0, "CL": 0},
+  "accrued": {"PL": 15.0, "CL": 6.7},
+  "available": {"PL": 17.0, "CL": 6.7},
+  "used": {"PL": 6, "CL": 1},
+  "closing": {"PL": 11.0, "CL": 5.7},
+  "remarks": {"Feb": "20 and 27 Feb - PL", "May": "12-15 May - PL", "Aug": "26 Aug - CL"},
+  "exchange": ["3 April - in exchange for Bakri Id"],
+  "dates_in_sheet": ["2026-02-20", "2026-02-27", "2026-04-03", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-08-26"]
+}

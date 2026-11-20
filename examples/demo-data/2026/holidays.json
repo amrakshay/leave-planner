@@ -1,0 +1,27 @@
+{
+  "_note": "Sample data for the demo. Your real list comes from your company's holiday calendar.",
+  "source": "demo",
+  "updated": "2026-01-02T00:00:00Z",
+  "holidays": [
+    {"date": "2026-01-01", "name": "New Year", "kind": "company"},
+    {"date": "2026-01-14", "name": "Makar Sankranti", "kind": "optional"},
+    {"date": "2026-01-26", "name": "Republic Day", "kind": "company"},
+    {"date": "2026-02-19", "name": "Shivaji Jayanti", "kind": "optional"},
+    {"date": "2026-03-04", "name": "Holi", "kind": "company"},
+    {"date": "2026-03-19", "name": "Gudi Padwa", "kind": "optional"},
+    {"date": "2026-04-03", "name": "Good Friday", "kind": "optional"},
+    {"date": "2026-05-01", "name": "Maharashtra Day", "kind": "company"},
+    {"date": "2026-05-28", "name": "Bakri Id", "kind": "company"},
+    {"date": "2026-08-28", "name": "Raksha Bandhan", "kind": "optional"},
+    {"date": "2026-09-14", "name": "Ganesh Chaturthi", "kind": "optional"},
+    {"date": "2026-09-25", "name": "Anant Chaturdashi", "kind": "company"},
+    {"date": "2026-10-02", "name": "Gandhi Jayanti", "kind": "company"},
+    {"date": "2026-10-20", "name": "Dussehra", "kind": "company"},
+    {"date": "2026-11-06", "name": "Dhanteras", "kind": "company"},
+    {"date": "2026-11-09", "name": "Diwali", "kind": "company"},
+    {"date": "2026-11-10", "name": "Bali Pratipada", "kind": "optional"},
+    {"date": "2026-11-11", "name": "Bhaubeej", "kind": "optional"},
+    {"date": "2026-11-24", "name": "Guru Nanak Jayanti", "kind": "optional"},
+    {"date": "2026-12-25", "name": "Christmas", "kind": "company"}
+  ]
+}

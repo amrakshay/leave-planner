@@ -1,0 +1,17 @@
+{
+  "_note": "One entry per Gmail thread. Sample data.",
+  "requests": [
+    {"thread_id": "demo-1", "subject": "Leave on 20 Feb", "sent": "2026-02-10", "dates": ["2026-02-20"], "type": "PL", "status": "approved", "approved_on": "2026-02-10", "message_count": 2},
+    {"thread_id": "demo-2", "subject": "Leave on 27 Feb", "sent": "2026-02-18", "dates": ["2026-02-27"], "type": "PL", "status": "approved", "approved_on": "2026-02-18", "message_count": 2},
+    {"thread_id": "demo-3", "subject": "Gudi Padwa exchange", "sent": "2026-03-10", "dates": ["2026-03-19"], "type": "Exchange", "status": "cancelled", "cancelled_by": "manager", "message_count": 3},
+    {"thread_id": "demo-4", "subject": "Good Friday off in exchange for Bakri Id", "sent": "2026-03-25", "dates": ["2026-04-03"], "type": "Exchange", "status": "approved", "approved_on": "2026-03-25", "message_count": 2},
+    {"thread_id": "demo-5", "subject": "Leave 12-15 May", "sent": "2026-04-28", "dates": ["2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15"], "type": "PL", "status": "approved", "approved_on": "2026-04-29", "message_count": 2},
+    {"thread_id": "demo-6", "subject": "Leave on 26 Aug", "sent": "2026-08-20", "dates": ["2026-08-26"], "type": "CL", "status": "approved", "approved_on": "2026-08-20", "message_count": 2},
+    {"thread_id": "demo-7", "subject": "Optional holidays 10-11 Nov", "sent": "2026-11-12", "last_message": "2026-11-12", "dates": ["2026-11-10", "2026-11-11"], "type": "Optional", "status": "pending", "message_count": 1},
+    {"thread_id": "demo-8", "subject": "Leave on 26 Nov", "sent": "2026-11-13", "dates": ["2026-11-26"], "type": "CL", "status": "approved", "approved_on": "2026-11-13", "message_count": 2},
+    {"thread_id": "demo-9", "subject": "Leave on 4 Dec", "sent": "2026-11-16", "dates": ["2026-12-04"], "type": "CL", "status": "approved", "approved_on": "2026-11-17", "message_count": 2}
+  ],
+  "swaps": [
+    {"worked": "2026-05-28", "off": "2026-04-03", "note": "Worked Bakri Id, took Good Friday"}
+  ]
+}
