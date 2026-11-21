@@ -35,6 +35,11 @@ calendar IDs, or any leave data into a committed file. Personal values live only
 If `config.json` is missing, copy `examples/config.example.json`, ask the user for the values,
 and fill it in.
 
+**Opening the page.** `install.sh` at the repo root adds a shell alias (default `leaves`) that
+runs `build.py --open`: rebuild from the cached JSON and open the page in the browser. If the
+user asks how to open the dashboard and `grep -q "leave-planner: open the leave dashboard"` on
+their shell rc file fails, offer to run `./install.sh` for them.
+
 ## Hard rules
 
 - **HR sheet is read-only.** Never edit it.
@@ -91,7 +96,8 @@ Fetch only what changed. Record fingerprints in `data/sync-state.json`.
    never touched). Then set `data/sync-state.json.last_refresh` to now (ISO with offset).
 9. **Report** in a few lines: projected PL and CL, what changed since the last run (new
    approvals, new pending, sheet updates), the attention items the build printed, and any
-   calendar proposals from `sync-calendar`'s rules. Give the path of the HTML to open.
+   calendar proposals from `sync-calendar`'s rules. Say they can open it with the alias
+   (`leaves`, if `install.sh` was run) or give the path of the HTML.
 
 ## `/leave-dashboard request <dates> <type>`
 

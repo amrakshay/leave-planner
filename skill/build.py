@@ -10,6 +10,7 @@ Usage:
   python3 build.py                      # repo defaults (config.json, data/, leave-dashboard.html)
   python3 build.py --today 2026-11-19   # pretend today is another day
   python3 build.py --where              # print the paths it would use
+  python3 build.py --open               # rebuild from cache and open in the browser
   python3 build.py --config examples/config.example.json --data examples/demo-data \
                    --out docs/demo.html --today 2026-11-19
 """
@@ -400,6 +401,8 @@ def main():
     ap.add_argument("--no-write-weekends", action="store_true",
                     help="do not write the recalculated long-weekends.json back")
     ap.add_argument("--where", action="store_true", help="print paths and exit")
+    ap.add_argument("--open", action="store_true",
+                    help="rebuild from the cached data (no fetching) and open the page in the browser")
     a = ap.parse_args()
 
     if a.where:
@@ -431,6 +434,12 @@ def main():
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     Path(a.out).write_text(html)
     b = data["bal"]
+    if a.open:
+        import webbrowser
+        webbrowser.open(Path(a.out).resolve().as_uri())
+        print(f"Opened {a.out}  (PL {b['PL']['proj']}, CL {b['CL']['proj']}; data as of {data['synced_at'] or 'never'}"
+              " - run /leave-dashboard in Claude Code to refresh)")
+        return 0
     print(json.dumps({
         "out": a.out,
         "PL": b["PL"]["proj"], "CL": b["CL"]["proj"],

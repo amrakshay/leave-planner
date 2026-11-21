@@ -49,6 +49,7 @@ Google Calendar        ──┘        (only what changed since last run)
 | `/leave-dashboard request <dates> <type>` | Draft a leave request email to your manager (not sent) |
 | `/leave-dashboard sync-calendar` | Propose team calendar entries to add or remove; applies only the ones you approve |
 | `/leave-dashboard add-weekend <from> <to> [note]` | Save your own long-weekend idea |
+| `leaves` (in any terminal) | Open the dashboard in your browser. Rebuilds from the saved data first, so "today" is current; it does not fetch anything new |
 
 ## Set up
 
@@ -57,9 +58,13 @@ You need Claude Code with the Google Drive, Gmail and Google Calendar connectors
 ```bash
 git clone https://github.com/amrakshay/leave-planner.git
 cd leave-planner
-ln -s "$PWD/skill" ~/.claude/skills/leave-dashboard
+./install.sh
 cp examples/config.example.json config.json
 ```
+
+`install.sh` links the skill into `~/.claude/skills/leave-dashboard` and adds a `leaves`
+alias to your `~/.zshrc` (or bash profile). Pass a name to use another alias:
+`./install.sh myleaves`. Running it again changes nothing.
 
 Fill in `config.json` (your name, manager, the leave sheet's title, calendar IDs, Gmail
 queries), then run `/leave-dashboard` in Claude Code. The skill asks for anything it can't find.
