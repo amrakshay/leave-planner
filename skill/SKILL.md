@@ -103,7 +103,9 @@ Fetch only what changed. Record fingerprints in `data/sync-state.json`.
 
 Create a Gmail **draft** to `config.manager.emails[0]` (cc `config.cc`).
 Copy the subject and wording style of the user's most recent request thread in `leaves.json`.
-Dates are comma-separated `YYYY-MM-DD`; type is `PL`, `CL` or `Optional`. Show the draft and
+Dates are comma-separated `YYYY-MM-DD`; type is `PL`, `CL` or `Optional`. In the email, write
+the type out as **paid leave** (PL — not "privilege leave"), **casual leave** (CL) or
+**optional holiday** (Optional). Show the draft and
 say it has not been sent. Several commands may be chained with ` ; ` (one draft each).
 
 ## `/leave-dashboard sync-calendar`
